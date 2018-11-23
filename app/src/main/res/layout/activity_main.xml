@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.superman.coordinatorlayout.MainActivity">
+
+    <TextView
+        android:id="@+id/system_coordinator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#bfb6b6"
+        android:padding="10dp"
+        android:text="android自带的默认scrollingactivity"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/img_coordinator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#bfb6b6"
+        android:padding="10dp"
+        android:text="带图片的coordinatorlayout"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tab_coordinator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#bfb6b6"
+        android:padding="10dp"
+        android:text="含tablayout的coordinatorlayout"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+</LinearLayout>
