@@ -23,6 +23,6 @@
         <activity android:name=".CoordinatorLayoutActivity" />
         <activity
             android:name=".TabLayoutActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 </manifest>
