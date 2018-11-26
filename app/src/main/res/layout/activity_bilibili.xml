@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context="com.superman.coordinatorlayout.BilibiliActivity">
+
+ <android.support.design.widget.AppBarLayout
+     android:id="@+id/app_bar"
+     android:layout_width="match_parent"
+     android:fitsSystemWindows="true"
+     android:layout_height="@dimen/app_bar_height">
+<android.support.design.widget.CollapsingToolbarLayout
+    android:layout_width="match_parent"
+    app:contentScrim="@color/colorPrimaryDark"
+    android:fitsSystemWindows="true"
+    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+    android:layout_height="match_parent">
+    <ImageView
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_collapseMode="parallax"
+        app:layout_collapseParallaxMultiplier="0.8"
+        android:layout_height="wrap_content"
+        android:src="@drawable/girl"/>
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        app:layout_collapseMode="pin"
+        app:title=""
+        android:layout_height="45dp">
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint_show"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="肖生克的救赎"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint_gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="wrap_content"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_play"
+                app:layout_constraintRight_toLeftOf="@+id/tv_play"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_play"
+                android:layout_width="94dp"
+                android:layout_height="21dp"
+                android:gravity="center"
+                android:text="立即播放"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/iv_play"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.CollapsingToolbarLayout>
+ </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/view_nest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.bloodcrown.croodnatorlayouttest2.ScrollingActivity"
+        tools:showIn="@layout/activity_scrolling">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/large_text"/>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/view_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:src="@drawable/ic_play"
+        app:layout_anchor="@+id/app_bar"
+        app:layout_anchorGravity="bottom|right"/>
+
+</android.support.design.widget.CoordinatorLayout>

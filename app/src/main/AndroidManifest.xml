@@ -20,9 +20,15 @@
             android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CoordinatorLayoutActivity" />
+        <activity
+            android:name=".CoordinatorLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".TabLayoutActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BilibiliActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
     </application>
+
 </manifest>
