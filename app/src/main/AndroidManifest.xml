@@ -29,6 +29,14 @@
         <activity
             android:name=".BilibiliActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".BehaviorActivity"
+            android:label="@string/title_activity_behavior"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".BehaviorLikeUcActivity"
+            android:label="@string/title_activity_behavior"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

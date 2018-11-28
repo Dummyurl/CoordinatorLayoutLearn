@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.img_coordinator).setOnClickListener(this);
         findViewById(R.id.tab_coordinator).setOnClickListener(this);
         findViewById(R.id.bilibili_coordinator).setOnClickListener(this);
+        findViewById(R.id.behavier_coordinator).setOnClickListener(this);
+        findViewById(R.id.behavieruc_coordinator).setOnClickListener(this);
     }
 
     @Override
@@ -31,6 +33,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bilibili_coordinator:
                 startActivity(new Intent(this, BilibiliActivity.class));
+                break;
+            case R.id.behavier_coordinator:
+                startActivity(new Intent(this, BehaviorActivity.class));
+                break;
+            case R.id.behavieruc_coordinator:
+                startActivity(new Intent(this, BehaviorLikeUcActivity.class));
                 break;
         }
     }
